@@ -60,9 +60,9 @@ button:hover {
 
 .task-container{
     text-align: center;
-    width: 70%;
+    width: 100%;
     min-width: 500px;
-    margin: 20px auto;
+    margin: 20px 0;
 }
 .task-container li{
     display: flex;
@@ -74,6 +74,8 @@ button:hover {
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
+  min-width: 500px;
+  margin: auto;
 }
 .task-text{
     flex: 1;
