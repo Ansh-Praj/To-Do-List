@@ -1,32 +1,47 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-  text-align: center;
-  height: 100vh;
-  background-color: rgb(32, 31, 31);
-  color: black;
-} 
+    text-align: center;
+    margin: auto;
+    height: 100vh;
+    background-color: rgb(32, 31, 31);
+    color: black;
+}
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  color: #747bff;
-  margin-bottom: 20px;
+    font-size: 3.2em;
+    line-height: 1.1;
+    color: #747bff;
+    margin-bottom: 20px;
 }
-.adders{
+
+.adders form input{
+    outline: none;
+    border: none;
+}
+
+.adders form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-input{
+
+.adders form input:focus{
+    outline: none;
+    border: none;
+}
+
+input {
     width: 500px;
     height: 50px;
     padding: 0 10px;
@@ -34,7 +49,8 @@ input{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.add-btn{
+
+.add-btn {
     height: 50px;
     padding: 0 10px;
     border: none;
@@ -43,28 +59,31 @@ input{
     background-color: rgb(41, 206, 0);
     transition: all .2s;
 }
-.add-btn:hover{
+
+.add-btn:hover {
     box-shadow: 5px 0 10px rgb(41, 206, 0);
 }
+
 button {
-  font-family: inherit;
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: 500;
-  transition: border-color 0.25s;
-  color: white;
-}
-button:hover {
-  border-color: rgb(255, 11, 11);
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: border-color 0.25s;
+    color: white;
 }
 
-.task-container{
+button:hover {
+    border-color: rgb(255, 11, 11);
+}
+
+.task-container {
     text-align: center;
     width: 100%;
-    min-width: 500px;
     margin: 20px 0;
 }
-.task-container li{
+
+.task-container li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,35 +93,43 @@ button:hover {
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
-  min-width: 500px;
-  margin: auto;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 1rem;
 }
-.task-text{
+
+.task-text {
     flex: 1;
     font-size: 1.2rem;
 }
-.del-btn{
+
+.del-btn {
     /* background-color: rgb(238, 60, 60); */
     background-color: rgb(206, 41, 0);
     color: white;
     font-weight: bold;
     width: 100px;
 }
-.del-btn:hover{
+
+.del-btn:hover {
     box-shadow: 0 0 10px rgb(206, 21, 0)
 }
-.del-btn, .move-btn{
+
+.del-btn,
+.move-btn {
     height: 40px;
     border: none;
     border-radius: 5px;
     transition: all .2s;
 }
-.move-btn{
+
+.move-btn {
     background-color: #747bff;
     color: white;
     margin-left: 5px;
     width: 50px;
 }
-.move-btn:hover{
+
+.move-btn:hover {
     box-shadow: 0 0 10px #747bff;
 }
